@@ -94,3 +94,21 @@ class _PostListScreenState extends State<PostListScreen> {
                             ],
                           ),
                         ),
+                        
+                      );
+                    },
+                  ),
+                ),
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.add),
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const PostDetailScreen()),
+          );
+        },
+      ),
+    );
+  }
+}
+
